@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImagePickerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XjR-ge-Y1l">
+                                <rect key="frame" x="157" y="140" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eMH-kZ-puh"/>
+                                    <constraint firstAttribute="height" constant="100" id="qmi-DP-j1n"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J2-ni-rV2">
+                                <rect key="frame" x="157" y="140" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="sCa-A8-alX"/>
+                                    <constraint firstAttribute="width" constant="100" id="v7l-Zv-o85"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="btnPhotoProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZQ-og-pq1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-kH-7KB">
+                                <rect key="frame" x="32" y="304" width="350" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za4-UA-3Ep">
+                                <rect key="frame" x="32" y="780" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ttw-7h-ByQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSaveOnTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZP-90-WU6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XjR-ge-Y1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="0mK-OD-Tnw"/>
+                            <constraint firstItem="TMP-kH-7KB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="1Wh-sI-NUT"/>
+                            <constraint firstItem="8J2-ni-rV2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="2Bf-9U-y9X"/>
+                            <constraint firstItem="za4-UA-3Ep" firstAttribute="firstBaseline" relation="greaterThanOrEqual" secondItem="TMP-kH-7KB" secondAttribute="baseline" constant="64" id="3kv-Wa-v1i"/>
+                            <constraint firstItem="8J2-ni-rV2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6hQ-KS-GMQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="za4-UA-3Ep" secondAttribute="trailing" constant="32" id="BE6-Hm-GKm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="za4-UA-3Ep" secondAttribute="bottom" constant="32" id="KOw-Yg-Wer"/>
+                            <constraint firstItem="za4-UA-3Ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Pms-p0-Lrx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TMP-kH-7KB" secondAttribute="trailing" constant="32" id="ftw-fE-IN1"/>
+                            <constraint firstItem="TMP-kH-7KB" firstAttribute="top" secondItem="XjR-ge-Y1l" secondAttribute="bottom" constant="64" id="kIX-PN-Uuq"/>
+                            <constraint firstItem="XjR-ge-Y1l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xF2-tt-mVn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnPhotoProfile" destination="8J2-ni-rV2" id="uyT-Lw-lhv"/>
+                        <outlet property="btnSave" destination="za4-UA-3Ep" id="vAK-XQ-nio"/>
+                        <outlet property="ivPhotoProfile" destination="XjR-ge-Y1l" id="nRo-Ox-6hs"/>
+                        <outlet property="lbName" destination="TMP-kH-7KB" id="7xT-da-5Vk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
